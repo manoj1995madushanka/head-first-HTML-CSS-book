@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<title>Forms with table</title>
+		<link type="text/css" rel="stylesheet" href="form with table.css" />
+	</head>
+	<body>
+		<form action="http://www.starbuzzcoffee.com/processorder.php" method="POST">
+			<table>
+				<tr>
+					<th>choose your beans:</th>
+					<td>
+						<select name="beans">
+							<option value="House Blend">House Blend</option>
+							<option value="Bolivia">Shade down bovilia supremo</option>
+							<option value="Guatemala">Organic Gautemala</option>
+							<option value="Kenya">Kenya</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Type:</th>
+					<td>
+						<input type="radio" name="beantype" value="whole"/>Whole<br/>
+						<input type="radio" name="beantype" value="ground" checked="checked"/>Ground
+					</td>
+				</tr>
+
+				<tr>
+					<th>Extras:</th>
+					<td>
+						<input type="checkbox" name="extras[]" value="giftwrap"/>Gift wrap<br/>
+						<input type="checkbox" name="extras[]" value="catalog" checked="checked"/>Include catalog with order
+					</td>
+				</tr>
+
+				<tr>
+					<th>Ship to:</th>
+					<td>
+						<table>
+							<tr>
+								<td>Name:</td>
+								<td>
+									<input type="text" name="name" value=""/>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Address:</td>
+								<td>
+									<input type="text" name="address" value=""/>
+								</td>
+							</tr>
+
+							<tr>
+								<td>City</td>
+								<td>
+									<input type="text" name="city" value=""/>
+								</td>
+							</tr>
+
+							<tr>
+								<td>State</td>
+								<td>
+									<input type="text" name="state" value=""/>
+								</td>
+							</tr>
+
+							<tr>
+								<td>Zip:</td>
+								<td>
+									<input type="text" name="zip" value=""/>
+								</td>
+							</tr>
+
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Customer coments:</th>
+					<td>
+						<textarea name="coments" rows="10" cols="48"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<th></th>
+					<td><input type="submit" value="Order Now"/></td>
+				</tr>
+
+			</table>
+	</body>
+</html>

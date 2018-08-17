@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Your cooper</title>
+	</head>
+	<body>
+		<form action="htpp://www.chooseyourmini.com/choice.php" method="POST">
+			<P>
+				Your information:<br/>
+				Name:<input type="text" name="name"/><br/>
+				Zip:<input type="text" name="zip"/><br/>
+			</P>
+			<p>
+				which model do you want?<br/>
+				<select name="model">
+					<option value="cooper">Mini cooper</option>
+					<option value="cooperS">Mini cooper S</option>
+					<option value="convertible">Mini cooper convertible</option>
+				</select>
+			</p>
+
+			<p>
+				Which colour do you want?<br/>
+				<input type="radio" name="colour" value="chilired"/>Chili Red<br/>
+				<input type="radio" name="colour" value="hyperblue"/>Hyper Blue<br/>
+			</p>
+
+			<p>
+				Wich option do you want?<br/>
+				<input type="checkbox" name="caroptions[]" value="stripes"/>Racing Stripes<br/>
+				<input type="checkbox" name="caroptions[]" value="sportseats"/>Sport Seats
+			</p>
+
+			<p>
+				<input type="submit" value="Order Now"/>
+			</p>
+	</body>
+</html>

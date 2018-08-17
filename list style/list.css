@@ -1,0 +1,8 @@
+li{
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+#1{
+	list-style-type: circle;
+}

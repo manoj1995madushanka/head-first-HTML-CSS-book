@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>The Starbuzz Bean Machine</title>
+  </head>
+  <body>
+
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Fill out the form below and click submit to order</h2>
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="POST">
+    	<p>Choose your beans:
+    		<select name="beans">
+    		<option value="House Blend">House Blend</option>
+    		<option value="Bolivia">Shade Grown Bolivia Supremo</option>
+    		<option value="Guatemala">Organic Gautemala</option>
+    		<option value="Kenya">Kenya</option>
+    	</select>
+    	</p>
+
+    	<p>
+    		Type: <br/>
+    		<input type="radio" name="beantype" value="whole"/>Whole bean<br/>
+    		<input type="radio" name="beantype" value="ground"/>Ground<br/>
+    	</p>
+
+    	<p>
+    		Extras:<br/>
+    		<input type="checkbox" name="extras[]" value="giftwrap"/>Gift Wrap<br/>
+    		<input type="checkbox" name="extras[]" value="catalog" checked="checked"/>Include catalog with order
+    	</p>
+
+    	<p>Ship to:<br/>
+    		Name:<input type="text" name="name"/><br/>
+    		Address:<input type="text" name="address"/><br/>
+    		City:<input type="text" name="city"/><br/>
+    		State:<input type="text" name="state"/><br/>
+    		Zip:<input type="text" name="zip"/><br/>
+    	</p>
+
+    	<p>
+    		Customer Comments:<br/>
+    		<textarea name="comments" rows="10" cols="48"></textarea>
+    	</p>
+
+    	<p>
+    		<input type="submit" value="Order Now"/>
+    	</p>
+
+    	<p>
+    		<fieldset>
+    			<legend>Condiments</legend>
+    			<input type="checkbox" name="spice" value="salt"/>salt<br/>
+    			<input type="checkbox" name="spice" value="pepper"/>Pepper<br/>
+    			<input type="checkbox" name="spice" value="garlic"/>Garlic
+    		</fieldset>
+    	</p>
+
+    	<p>
+    		password:<input type="password" name="secret"/>Your <br/>
+    	</p>
+
+    	<p>
+    		upload your file:<input type="file" name="doc"/><br/>
+    	</p>
+
+    	<p>
+    		<select name="characters" multiple="multiple">
+    			<option value="Buckaroo">Buckaroo Banzai</option>
+    			<option value="Tommy">Perfect Tommy</option>
+    			<option value="Penny Priddy">Penny</option>
+    			<option value="New Jersey">Jersey</option>
+    			<option value="John Parker">John</option>
+    		</select>
+    	</p>
+    </form>
+
+
+
+  </body>
+</html>
+

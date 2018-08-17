@@ -1,0 +1,29 @@
+body{
+	font-family:sans-serif;
+	background-color:#d2b48c;
+	margin-left:20%;
+	margin-right:20%;
+	border:1px dotted gray;
+	padding:10px 10px 10px 10px;
+	}
+h1,h2{
+	color:gray;
+}
+h1{
+	border-bottom: 1px solid black;
+}
+h2{
+	border-bottom: thin dotted aqua;
+}
+p{
+	color:maroon;
+}
+p.greentea{
+	color:green;
+}
+p.rasberry{
+	color:blue;
+}
+p.blueberry{
+	color:purple;
+}
